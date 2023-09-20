@@ -25,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		7231DC492ABB587500F2DF56 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = BadCode/.gitignore; sourceTree = "<group>"; };
+		7231DC4A2ABB64AF00F2DF56 /* sonar-project.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = "sonar-project.properties"; sourceTree = "<group>"; };
 		7249B1AB2ABB3FFA007E3F79 /* BadCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BadCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7249B1AE2ABB3FFA007E3F79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7249B1B02ABB3FFA007E3F79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				7231DC492ABB587500F2DF56 /* .gitignore */,
+				7231DC4A2ABB64AF00F2DF56 /* sonar-project.properties */,
 				7249B1AD2ABB3FFA007E3F79 /* BadCode */,
 				7249B1AC2ABB3FFA007E3F79 /* Products */,
 			);
