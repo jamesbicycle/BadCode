@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "6821D056-13BF-459E-AED0-9761C1D73D4A",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:BadCode.xcodeproj",
+      "identifier" : "7249B1AA2ABB3FFA007E3F79",
+      "name" : "BadCode"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:BadCode.xcodeproj",
+        "identifier" : "7231DC4E2ABB819600F2DF56",
+        "name" : "BadCodeTests"
+      }
+    }
+  ],
+  "version" : 1
+}

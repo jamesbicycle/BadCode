@@ -23,7 +23,7 @@ jobs:
           chmod +x build-wrapper-macosx-x86/build-wrapper-macosx-x86
 
       - name: Build with Build Wrapper
-        run: ./build-wrapper-macosx-x86/build-wrapper-macosx-x86 --out-dir bw-output xcodebuild -project BadCode.xcodeproj -scheme BadCode clean build CODE_SIGNING_ALLOWED=NO CODE_SIGNING_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+        run: ./build-wrapper-macosx-x86/build-wrapper-macosx-x86 --out-dir bw-output xcodebuild test -project BadCode.xcodeproj -scheme BadCode -destination 'platform=iOS Simulator,name=iPhone 13,OS=16.2' CODE_SIGNING_ALLOWED=NO -enableCodeCoverage YES
         
       - name: List Build Wrapper Output
         run: |

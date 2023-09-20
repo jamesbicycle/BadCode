@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7231DC522ABB819600F2DF56 /* BadCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7231DC512ABB819600F2DF56 /* BadCodeTests.swift */; };
+		7231DC5B2ABB824900F2DF56 /* MoreBadCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7231DC5A2ABB824900F2DF56 /* MoreBadCodeTests.m */; };
 		7249B1AF2ABB3FFA007E3F79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7249B1AE2ABB3FFA007E3F79 /* AppDelegate.swift */; };
 		7249B1B12ABB3FFA007E3F79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7249B1B02ABB3FFA007E3F79 /* SceneDelegate.swift */; };
 		7249B1B32ABB3FFA007E3F79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7249B1B22ABB3FFA007E3F79 /* ViewController.swift */; };
@@ -23,9 +25,24 @@
 		7249B1D62ABB4155007E3F79 /* RedundantBadCodeSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7249B1D52ABB4155007E3F79 /* RedundantBadCodeSwift.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7231DC532ABB819600F2DF56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7249B1A32ABB3FFA007E3F79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7249B1AA2ABB3FFA007E3F79;
+			remoteInfo = BadCode;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		7231DC492ABB587500F2DF56 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = BadCode/.gitignore; sourceTree = "<group>"; };
 		7231DC4A2ABB64AF00F2DF56 /* sonar-project.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = "sonar-project.properties"; sourceTree = "<group>"; };
+		7231DC4F2ABB819600F2DF56 /* BadCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BadCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7231DC512ABB819600F2DF56 /* BadCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadCodeTests.swift; sourceTree = "<group>"; };
+		7231DC582ABB81A500F2DF56 /* BadCode.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = BadCode.xctestplan; sourceTree = "<group>"; };
+		7231DC592ABB824800F2DF56 /* BadCodeTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BadCodeTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		7231DC5A2ABB824900F2DF56 /* MoreBadCodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoreBadCodeTests.m; sourceTree = "<group>"; };
 		7249B1AB2ABB3FFA007E3F79 /* BadCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BadCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7249B1AE2ABB3FFA007E3F79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7249B1B02ABB3FFA007E3F79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +67,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7231DC4C2ABB819600F2DF56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7249B1A82ABB3FFA007E3F79 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,12 +84,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7231DC502ABB819600F2DF56 /* BadCodeTests */ = {
+			isa = PBXGroup;
+			children = (
+				7231DC512ABB819600F2DF56 /* BadCodeTests.swift */,
+				7231DC5A2ABB824900F2DF56 /* MoreBadCodeTests.m */,
+				7231DC592ABB824800F2DF56 /* BadCodeTests-Bridging-Header.h */,
+			);
+			path = BadCodeTests;
+			sourceTree = "<group>";
+		};
 		7249B1A22ABB3FFA007E3F79 = {
 			isa = PBXGroup;
 			children = (
+				7231DC582ABB81A500F2DF56 /* BadCode.xctestplan */,
 				7231DC492ABB587500F2DF56 /* .gitignore */,
 				7231DC4A2ABB64AF00F2DF56 /* sonar-project.properties */,
 				7249B1AD2ABB3FFA007E3F79 /* BadCode */,
+				7231DC502ABB819600F2DF56 /* BadCodeTests */,
 				7249B1AC2ABB3FFA007E3F79 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				7249B1AB2ABB3FFA007E3F79 /* BadCode.app */,
+				7231DC4F2ABB819600F2DF56 /* BadCodeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +145,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7231DC4E2ABB819600F2DF56 /* BadCodeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7231DC552ABB819600F2DF56 /* Build configuration list for PBXNativeTarget "BadCodeTests" */;
+			buildPhases = (
+				7231DC4B2ABB819600F2DF56 /* Sources */,
+				7231DC4C2ABB819600F2DF56 /* Frameworks */,
+				7231DC4D2ABB819600F2DF56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7231DC542ABB819600F2DF56 /* PBXTargetDependency */,
+			);
+			name = BadCodeTests;
+			productName = BadCodeTests;
+			productReference = 7231DC4F2ABB819600F2DF56 /* BadCodeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		7249B1AA2ABB3FFA007E3F79 /* BadCode */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7249B1BF2ABB3FFC007E3F79 /* Build configuration list for PBXNativeTarget "BadCode" */;
@@ -135,6 +190,11 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					7231DC4E2ABB819600F2DF56 = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
+						TestTargetID = 7249B1AA2ABB3FFA007E3F79;
+					};
 					7249B1AA2ABB3FFA007E3F79 = {
 						CreatedOnToolsVersion = 14.3.1;
 						LastSwiftMigration = 1430;
@@ -155,11 +215,19 @@
 			projectRoot = "";
 			targets = (
 				7249B1AA2ABB3FFA007E3F79 /* BadCode */,
+				7231DC4E2ABB819600F2DF56 /* BadCodeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7231DC4D2ABB819600F2DF56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7249B1A92ABB3FFA007E3F79 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -173,6 +241,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7231DC4B2ABB819600F2DF56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7231DC522ABB819600F2DF56 /* BadCodeTests.swift in Sources */,
+				7231DC5B2ABB824900F2DF56 /* MoreBadCodeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7249B1A72ABB3FFA007E3F79 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -192,6 +269,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7231DC542ABB819600F2DF56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7249B1AA2ABB3FFA007E3F79 /* BadCode */;
+			targetProxy = 7231DC532ABB819600F2DF56 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7249B1B42ABB3FFA007E3F79 /* Main.storyboard */ = {
@@ -213,6 +298,49 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7231DC562ABB819600F2DF56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TB69G84PB8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamestaylortx.BadCodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "BadCodeTests/BadCodeTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BadCode.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BadCode";
+			};
+			name = Debug;
+		};
+		7231DC572ABB819600F2DF56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TB69G84PB8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamestaylortx.BadCodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "BadCodeTests/BadCodeTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BadCode.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BadCode";
+			};
+			name = Release;
+		};
 		7249B1BD2ABB3FFC007E3F79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -391,6 +519,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7231DC552ABB819600F2DF56 /* Build configuration list for PBXNativeTarget "BadCodeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7231DC562ABB819600F2DF56 /* Debug */,
+				7231DC572ABB819600F2DF56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7249B1A62ABB3FFA007E3F79 /* Build configuration list for PBXProject "BadCode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
