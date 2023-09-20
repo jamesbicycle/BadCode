@@ -5,16 +5,28 @@ on:
       - main
   pull_request:
     types: [opened, synchronize, reopened]
+
 jobs:
   sonarcloud:
     name: SonarCloud
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+          fetch-depth: 0
+
+      - name: Download and Setup Build Wrapper
+        run: |
+          # Download the build wrapper for macOS (adjust the URL accordingly)
+          curl -Lo build-wrapper.zip https://sonarcloud.io/static/cpp/build-wrapper-macosx-x86.zip
+          unzip build-wrapper.zip
+          chmod +x build-wrapper-macosx-x86/build-wrapper-macosx-x86
+
+      - name: Build with Build Wrapper
+        run: ./build-wrapper-macosx-x86/build-wrapper-macosx-x86 --out-dir bw-output xcodebuild -project BadCode.xcodeproj -scheme BadCode clean build CODE_SIGNING_ALLOWED=NO CODE_SIGNING_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
